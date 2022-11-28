@@ -1,0 +1,35 @@
+.Form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.Form__Field {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.Form__Input {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 44px;
+    padding: 0 12px;
+    background-color: transparent;
+    border: 1px solid #383842;
+}
+
+.Form__Input:focus-visible {
+    border: 2px solid #383842;
+}
+
+
+/* Modifiers */
+.Form__Field--Double {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 18px;
+    align-items: end;
+}

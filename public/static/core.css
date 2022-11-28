@@ -1,0 +1,115 @@
+@import "reset.css";
+
+:root {
+    --btn_vertical_padding: 12px;
+    --btn_horizontal_padding: 40px;
+}
+
+body {
+    /*background-color: #67678c;*/
+    /*background-color: #908ca8;*/
+    background-color: #aea9c9;
+    font-size: 14px;
+    font-family: "Segoe UI", serif;
+    color: #09090d;
+}
+
+.Content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+.Btn {
+    padding: var(--btn_vertical_padding) var(--btn_horizontal_padding);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+
+.BtnArrow::after {
+    content: ">";
+    position: absolute;
+    right: calc(-18px + var(--btn_horizontal_padding));
+    font-size: 0.9rem;
+}
+
+.BtnArrow:hover::after {
+    transition-duration: 0.5s;
+    /*transform: rotate(360deg);*/
+    transform: translateX(10px);
+}
+
+.Btn--Border {
+    border: 1px solid black;
+}
+
+a {
+    color: #09090d;
+}
+
+.BookItem, .ReaderPerson, .ReadersHeaders, .BooksHeaders {
+    display: grid;
+    grid-template-columns: 1.8fr 4fr 1.2fr 1.2fr 1.1fr;
+    grid-template-rows: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.Screen {
+    width: 100%;
+}
+
+.Checkbox__text {
+    padding: 0 0 0 4px;
+}
+
+.BooksList {
+    display: grid;
+    grid-gap: 14px;
+}
+
+.BooksList--General {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.BooksList--My {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.Image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.BookOrder {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.BookOrder__Header {
+    margin-bottom: 20px;
+}
+
+.BookOrder__Btn {
+    margin-top: 10px;
+}
+
+.Profile__Person {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 16px;
+}

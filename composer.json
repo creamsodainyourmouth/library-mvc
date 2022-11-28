@@ -1,0 +1,24 @@
+{
+    "name": "creamsodainyourmouth/library-mvc",
+    "description": "It's a library accounting system study project, written with simple implementation of the MVC architecture.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "creamsodainyourmoth",
+            "email": "creamsodainyourmouth@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\Src\\": "core/Src",
+            "core\\Src\\Utils\\": "core/Src/Utils",
+            "app\\": "app"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.Register {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 600px;
+}
+
+.Register__Form {
+    min-width: 360px;
+}
+
+.Register__Label {
+    align-self: flex-start;
+    position: relative;
+    top: 8px;
+    left: 10px;
+    padding: 0 4px;
+    /*background-color: #908ca8;*/
+    background-color: #aea9c9;
+}
+
+.Register__Btn::after {
+    /*margin: 1px 0 0 140px;*/
+}
+
+
+
+

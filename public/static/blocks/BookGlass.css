@@ -1,0 +1,46 @@
+:root {
+    --glass_order_btn_horizontal_padding: 36px;
+    --glass_frame_left_margin: 40px;
+}
+
+.BookGlass {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 980px;
+}
+
+.BookGlass__Text {
+    position: relative;
+    width: 60%;
+}
+
+.BookGlass__Frame {
+    width: 40%;
+    margin-left: var(--glass_frame_left_margin);
+}
+
+.BookGlass__Cover {
+    width: 100%;
+}
+
+.BookGlass__Title {
+    font-size: 24px;
+}
+
+.BookGlass__Author {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.GlassItem {
+    font-size: 18px;
+}
+
+.GlassItem {
+    margin-bottom: 20px;
+}
+
+.BookGlass__OrderBtn {
+    width: max-content;
+}

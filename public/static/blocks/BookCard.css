@@ -1,0 +1,46 @@
+
+.BookCard {
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+}
+
+.BookCard--General {
+    background-color: #eae1f7;
+    padding: 18px;
+}
+
+.BookCard--My {
+    background-color: #eae1f7;
+    padding: 12px;
+}
+
+.BookCard--Detail {
+    width: 400px;
+}
+
+.BookCard--Admin {
+    width: 200px;
+}
+
+.BookCard__Text {
+    margin-top: 18px;
+}
+
+.BookCard__Author {
+    text-decoration: underline;
+}
+
+.BookCard__Cover {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.BookCard__OrderData {
+    margin-top: 12px;
+}
+
+.BookCard__MyStatus {
+    margin-top: 6px;
+}

@@ -1,0 +1,69 @@
+@import "core.css";
+@import "blocks/blocks.css";
+
+
+ul {
+    list-style: none;
+}
+
+.Content {
+    padding: 40px 32px;
+}
+
+.Header {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 10px 32px;
+}
+
+.TopBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+.Logo__Link {
+    text-decoration: none;
+}
+
+.AccessLinks {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Menu__List {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.AccessLinks__Item {
+    margin-left: 20px;
+}
+
+.Menu__Item {
+    margin-right: 20px;
+}
+
+.Menu__Item--Admin {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.Menu__AdminItem {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.Row {
+    background-color: #948da8;
+}
+
+.Headers {
+    background-color: #726d82;
+}
+

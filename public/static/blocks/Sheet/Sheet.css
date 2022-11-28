@@ -1,0 +1,128 @@
+:root {
+    --sheet_btn_edit_width: 80px;
+    --sheet_checkbox_width: 46px;
+    --sheet_status_width: 142px;
+    --sheet_date_width: 90px;
+    --sheet_counter_width: 28px;
+    --sheet_lib_card_width: 56px;
+    --sheet_phone_width: 128px;
+    --sheet_book_stat_column_width: 136px;
+    --sheet_horizontal_padding: 10px;
+    --sheet_year_width: 60px;
+}
+
+.Sheet {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.Sheet__Row {
+    display: grid;
+    grid-template-rows: minmax(28px, auto);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.Sheet__Columns {
+    display: grid;
+    grid-template-rows: minmax(28px, auto);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    grid-column-gap: 20px;
+}
+
+.Sheet__Columns--BooksList {
+    grid-template-columns:
+        var(--sheet_counter_width)
+        1.4fr
+        2.4fr
+        1fr
+        var(--sheet_year_width)
+        var(--sheet_book_stat_column_width)
+        var(--sheet_book_stat_column_width);
+}
+
+.Sheet__Columns--AdminDetailBookSelf {
+    grid-template-columns:
+        repeat(5, 1fr);
+}
+
+.Sheet__Columns--AdminDetailBookReaders {
+    grid-template-columns:
+        var(--sheet_lib_card_width)
+        1fr
+        repeat(2, var(--sheet_date_width))
+        var(--sheet_status_width)
+        var(--sheet_btn_edit_width)
+    ;
+}
+
+.Sheet__Columns--DetailReaderSelf {
+    grid-template-columns:
+        var(--sheet_lib_card_width)
+        1fr
+        3fr
+        var(--sheet_phone_width)
+        repeat(2, minmax(var(--sheet_book_stat_column_width), auto));
+}
+
+.Sheet__Columns--DetailReaderBooks {
+    grid-template-columns:
+        var(--sheet_counter_width)
+        1fr
+        3.4fr
+        repeat(2, var(--sheet_date_width))
+        minmax(var(--sheet_status_width), auto)
+        var(--sheet_checkbox_width)
+        var(--sheet_btn_edit_width);
+}
+
+.Sheet__Columns--ReadersList {
+    grid-template-columns:
+        var(--sheet_counter_width)
+        var(--sheet_lib_card_width)
+        1fr
+        2.4fr
+        var(--sheet_phone_width)
+        var(--sheet_book_stat_column_width)
+    ;
+}
+
+.Sheet__Columns--EditOrders {
+    grid-template-columns:
+        var(--sheet_counter_width)
+        1fr
+        2.4fr
+        repeat(2, calc(var(--sheet_date_width) + 80px));
+}
+
+.Sheet__ToolBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.Sheet__Btn {
+    padding: 0 30px;
+    background-color: rgba(236, 235, 237, 0.4);
+    height: 100%;
+}
+
+.ToolBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 32px;
+    /*padding: 0 18px;*/
+    margin: 12px 0 0 0;
+}
+
+.ToolBar__Hint {
+    padding: 0 12px;
+}

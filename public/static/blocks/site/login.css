@@ -1,0 +1,13 @@
+.Login {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 600px;
+}
+
+.Login__Form {
+    min-width: 360px;
+}
+
+.Login__Btn::after {
+    /*margin: 1px 0 0 30%;*/
+}
